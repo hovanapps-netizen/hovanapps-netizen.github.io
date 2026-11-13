@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ako Counter používa, uchováva a chráni údaje v aplikácii a pri výzve pre kamaráta.">
+  <title>Zásady ochrany súkromia · Counter</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #111b19; color: #f2f8f0; }
+    body { margin: 0; }
+    main { max-width: 44rem; padding: 2rem 1.25rem 4rem; margin: auto; }
+    header { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; padding-bottom: 1.25rem; border-bottom: 1px solid #3c5049; }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+    a { color: #c4fa89; text-underline-offset: .2em; }
+    section { padding-top: 1rem; scroll-margin-top: 1rem; }
+    section + section { margin-top: 2.5rem; border-top: 1px solid #3c5049; }
+    h1, h2 { line-height: 1.2; }
+    h1 { font-size: clamp(1.9rem, 6vw, 2.7rem); margin-bottom: .8rem; }
+    h2 { font-size: 1.18rem; margin-top: 1.75rem; }
+    p { color: #d3dfd8; line-height: 1.6; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <strong>Counter · Hovanapps</strong>
+    <nav aria-label="Jazyk / Language">
+      <a href="#sk" lang="sk">Slovenčina</a>
+      <a href="#cs" lang="cs">Čeština</a>
+      <a href="#en" lang="en">English</a>
+    </nav>
+  </header>
+
+  <section id="sk" lang="sk">
+    <h1>Zásady ochrany súkromia</h1>
+    <p>Counter prevádzkuje Hovanapps. Kontakt pre otázky o súkromí je <a href="mailto:hovanapps@gmail.com">hovanapps@gmail.com</a>.</p>
+    <h2>Údaje v telefóne</h2>
+    <p>Counter funguje bez účtu a reklám. Po udelení prístupu k údajom o používaní číta udalosti odomknutia a používania aplikácií, aby vypočítal otvorenia, čas, relácie a trendy. V telefóne ukladá štatistiky, limity, poznámky, nastavenia a lokálne výsledky výziev. Môže ich spracúvať na pozadí pre štatistiky, widget a pripomienky.</p>
+    <p>Voliteľná prístupnosť Androidu umožňuje počítať kliknutia, dlhé stlačenia a posuny hlásené inými aplikáciami, aj keď Counter beží na pozadí. Pri časovači návštevy a pripomienkach môže rozpoznať, ktorá aplikácia je v popredí. Služba nečíta obsah okien ani písaný text. Údaje zo služby prístupnosti sa spracúvajú v telefóne.</p>
+    <h2>Výzva pre kamaráta</h2>
+    <p>Keď vytvoríš odkaz, Counter cez HTTPS odošle zaznamenaný počet odomknutí a tvoj číselný tip. Web výzvy na OpenAI Sites ukladá tieto čísla, tip kamaráta, náhodný identifikátor odkazu a čas jeho vypršania. Identifikátor slúži aj na kontrolu, či už kamarát odpovedal. Po prvej odpovedi vidí čísla každý, kto má odkaz. Výzva neposiela zoznam aplikácií, časy v nich ani počty ťuknutí. Údaje výzvy používame na poskytnutie funkcie, ktorú si vyžiadal.</p>
+    <h2>Uchovávanie a vymazanie</h2>
+    <p>Odkaz vyprší po siedmich dňoch. Vypršané záznamy sa z databázy odstraňujú pri vytvorení ďalšej výzvy. Ak chceš požiadať o skoršie vymazanie, napíš na kontaktný e-mail a uveď odkaz na výzvu. Hosting môže pri prevádzke a ochrane služby spracúvať technické údaje spojenia, napríklad IP adresu.</p>
+    <p>Prístup k údajom o používaní, prístupnosť aj oznámenia môžeš vypnúť v nastaveniach Androidu. Údaje uložené Counterom v telefóne odstrániš vymazaním dát aplikácie alebo jej odinštalovaním. Zálohy a CSV exporty sa ukladajú na miesto, ktoré si vyberieš, a môžeš ich vymazať samostatne.</p>
+    <p>Ak sa na údaje vzťahuje GDPR, môžeš podľa okolností požiadať o prístup, opravu, vymazanie, obmedzenie spracúvania či prenosnosť, namietať spracúvanie alebo podať sťažnosť príslušnému dozornému orgánu.</p>
+  </section>
+
+  <section id="cs" lang="cs">
+    <h1>Zásady ochrany soukromí</h1>
+    <p>Counter provozuje Hovanapps. S dotazy o soukromí se můžeš obrátit na <a href="mailto:hovanapps@gmail.com">hovanapps@gmail.com</a>.</p>
+    <h2>Údaje v telefonu</h2>
+    <p>Counter funguje bez účtu a reklam. Po udělení přístupu k údajům o používání čte události odemknutí a používání aplikací, aby spočítal otevření, čas, relace a trendy. V telefonu ukládá statistiky, limity, poznámky, nastavení a místní výsledky výzev. Může je zpracovávat na pozadí kvůli statistikám, widgetu a připomínkám.</p>
+    <p>Volitelná služba přístupnosti Androidu umožňuje počítat klepnutí, dlouhá stisknutí a posuny hlášené jinými aplikacemi, i když je Counter na pozadí. Pro časovač návštěvy a připomínky může rozpoznat aplikaci v popředí. Služba nečte obsah oken ani psaný text. Údaje ze služby přístupnosti se zpracovávají v telefonu.</p>
+    <h2>Výzva pro kamaráda</h2>
+    <p>Při vytvoření odkazu Counter přes HTTPS odešle zaznamenaný počet odemknutí a tvůj číselný tip. Web výzvy na OpenAI Sites ukládá tato čísla, tip kamaráda, náhodný identifikátor odkazu a čas jeho vypršení. Identifikátor slouží také ke kontrole, zda už kamarád odpověděl. Po první odpovědi vidí čísla každý, kdo má odkaz. Výzva neposílá seznam aplikací, časy v nich ani počty klepnutí. Údaje výzvy používáme k poskytnutí vyžádané funkce.</p>
+    <h2>Uchovávání a vymazání</h2>
+    <p>Odkaz vyprší po sedmi dnech. Vypršené záznamy se z databáze odstraňují při vytvoření další výzvy. Pokud chceš požádat o dřívější vymazání, napiš na kontaktní e-mail a uveď odkaz na výzvu. Hosting může při provozu a ochraně služby zpracovávat technické údaje o připojení, například IP adresu.</p>
+    <p>Přístup k údajům o používání, přístupnost i oznámení můžeš vypnout v nastavení Androidu. Údaje uložené Counterem v telefonu odstraníš vymazáním dat aplikace nebo její odinstalací. Zálohy a CSV exporty se ukládají na zvolené místo a lze je vymazat samostatně.</p>
+    <p>Pokud se na údaje vztahuje GDPR, můžeš podle okolností požádat o přístup, opravu, vymazání, omezení zpracování nebo přenositelnost, vznést námitku či podat stížnost příslušnému dozorovému úřadu.</p>
+  </section>
+
+  <section id="en" lang="en">
+    <h1>Privacy policy</h1>
+    <p>Counter is operated by Hovanapps. For privacy enquiries, contact <a href="mailto:hovanapps@gmail.com">hovanapps@gmail.com</a>.</p>
+    <h2>Data on your phone</h2>
+    <p>Counter works without an account or ads. With Usage Access, it reads unlock and app usage events to calculate app opens, time in apps, sessions and trends. It stores statistics, limits, notes, settings and local challenge results on your phone. It may process them in the background for statistics, the widget and reminders.</p>
+    <p>The optional Android Accessibility service counts clicks, long presses and scrolls reported by other apps, including while Counter is in the background. It can detect the foreground app for the visit timer and reminders. The service does not read window contents or typed text. Accessibility service data is processed on your phone.</p>
+    <h2>Friend challenges</h2>
+    <p>When you create an invite link, Counter sends the recorded unlock count and your numeric guess over HTTPS. The challenge website on OpenAI Sites stores those numbers, the friend's guess, a random link identifier and its expiration time. The identifier is also used to check if your friend has answered. After the first answer, anyone with the link can see the numbers. The challenge does not transmit your app list, time in apps or tap counts. We use challenge data to provide the feature you requested.</p>
+    <h2>Retention and deletion</h2>
+    <p>Links expire after seven days. Expired records are removed from the database when a new challenge is created. To request earlier removal, email us with the challenge link. The hosting service may process connection details such as IP addresses to operate and protect the service.</p>
+    <p>You can turn off Usage Access, Accessibility and notifications in Android settings. Clear Counter's app data or uninstall it to remove the data it stored on your phone. Backups and CSV exports are saved to a location you choose and can be deleted separately.</p>
+    <p>Where the GDPR applies, you may have the right to access, correct, erase, restrict or transfer your data, object to processing or lodge a complaint with the relevant supervisory authority.</p>
+  </section>
+</main>
+</body>
+</html>
