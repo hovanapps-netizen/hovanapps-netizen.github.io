@@ -12,7 +12,7 @@
   header { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
   .mark { font-size: 2rem; font-weight: 600; letter-spacing: .02em; color: #E9A27C; }
   .mark i { display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); margin-left: .3rem; vertical-align: middle; box-shadow: 0 0 0 .3rem rgba(255, 90, 31, .25); }
-  nav { display: flex; gap: 1rem; }
+  nav { display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
   a { color: #FFB27F; text-underline-offset: .2em; }
   section { padding-top: 1.5rem; scroll-margin-top: 1rem; }
   section + section { margin-top: 2.5rem; border-top: 1px solid var(--line); }
@@ -27,7 +27,7 @@
 <main>
   <header>
     <div class="mark">kamsi<i></i></div>
-    <nav><a href="#en">English</a><a href="#sk">Slovenčina</a><a href="#cs">Čeština</a></nav>
+    <nav><a href="#en">English</a><a href="#sk">Slovenčina</a><a href="#cs">Čeština</a><a href="#de">Deutsch</a><a href="#pl">Polski</a><a href="#hu">Magyar</a></nav>
   </header>
 
   <section id="en" lang="en">
@@ -42,10 +42,10 @@
       <li><strong>Wikidata and Wikipedia</strong> (Wikimedia Foundation): your position rounded to about 100 m, to find interesting places nearby; later the found place, to load its description, facts and photo.</li>
       <li><strong>OpenStreetMap Nominatim</strong>: the position of the destination (not yours), to name its district and the nearest village.</li>
       <li><strong>OpenFreeMap</strong>: map tiles of the area shown on the map, as with any map app. The area around a journey is saved on the phone so the map also works without signal.</li>
-      <li><strong>Open-Meteo</strong>: your position rounded to about 1 km, to warn you about rain before a walk or bike ride.</li>
+      <li><strong>MET Norway</strong> (Norwegian Meteorological Institute, the data behind yr.no): your position rounded to about 1 km, to warn you about rain before a walk or bike ride.</li>
       <li><strong>Wikimedia Commons</strong>: photos of places.</li>
     </ul>
-    <p>Like any internet connection, these services see your phone's IP address. Their own policies: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://open-meteo.com/en/terms">Open-Meteo</a>.</p>
+    <p>Like any internet connection, these services see your phone's IP address. Their own policies: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://api.met.no/doc/TermsOfService">MET Norway</a>.</p>
     <h2>What is stored, and where</h2>
     <ul>
       <li>Places you found: name, date, the route you walked and how many hints you used.</li>
@@ -55,9 +55,11 @@
     <p>All of this is stored only in Kamsi's private storage on your phone. It is not shared with anyone, including us.</p>
     <h2>Camera, photos and notifications</h2>
     <p>The camera and your gallery are used only when you add your own photo to a place; the photo is copied into Kamsi. Notifications show a running journey and, if you leave it on, a reminder on Saturday mornings. Sharing a find sends a picture only where you choose.</p>
+    <h2>Kamsi Plus</h2>
+    <p>Kamsi Plus is bought through Google Play (or the App Store), which handles the payment. Kamsi only learns whether you have Plus and keeps that on your phone. We never see your payment details.</p>
     <h2>Your control</h2>
     <p>You can withdraw the location, camera or notification permission at any time in Android settings, and turn the reminder off in Kamsi's settings. Clearing Kamsi's data or uninstalling it deletes everything it stored. Since there is no account, there is nothing about you on our side.</p>
-    <p class="note">Last updated: 22 November 2026</p>
+    <p class="note">Last updated: 23 November 2026</p>
   </section>
 
   <section id="sk" lang="sk">
@@ -72,10 +74,10 @@
       <li><strong>Wikidata a Wikipédia</strong> (Wikimedia Foundation): tvoja poloha zaokrúhlená asi na 100 m, aby sa našli zaujímavé miesta v okolí; neskôr nájdené miesto, aby sa načítal jeho popis, údaje a fotka.</li>
       <li><strong>OpenStreetMap Nominatim</strong>: poloha cieľa (nie tvoja), aby sa zistil jeho okres a najbližšia obec.</li>
       <li><strong>OpenFreeMap</strong>: mapové dlaždice oblasti, ktorú vidíš na mape, ako pri každej mapovej appke. Okolie cesty sa uloží v telefóne, aby mapa fungovala aj bez signálu.</li>
-      <li><strong>Open-Meteo</strong>: tvoja poloha zaokrúhlená asi na 1 km, aby ťa Kamsi pred cestou pešo či na bicykli upozornilo na dážď.</li>
+      <li><strong>MET Norway</strong> (nórsky meteorologický ústav, údaje za yr.no): tvoja poloha zaokrúhlená asi na 1 km, aby ťa Kamsi pred cestou pešo či na bicykli upozornilo na dážď.</li>
       <li><strong>Wikimedia Commons</strong>: fotky miest.</li>
     </ul>
-    <p>Ako pri každom pripojení na internet, tieto služby vidia IP adresu tvojho telefónu. Ich vlastné zásady: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://open-meteo.com/en/terms">Open-Meteo</a>.</p>
+    <p>Ako pri každom pripojení na internet, tieto služby vidia IP adresu tvojho telefónu. Ich vlastné zásady: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://api.met.no/doc/TermsOfService">MET Norway</a>.</p>
     <h2>Čo sa ukladá a kde</h2>
     <ul>
       <li>Nájdené miesta: názov, dátum, prejdená trasa a počet použitých nápoved.</li>
@@ -85,9 +87,11 @@
     <p>Všetko je uložené iba v súkromnom úložisku Kamsi v tvojom telefóne. S nikým sa nezdieľa, ani s nami.</p>
     <h2>Fotoaparát, fotky a notifikácie</h2>
     <p>Fotoaparát a galériu Kamsi použije, len keď k miestu pridávaš vlastnú fotku; tá sa skopíruje do Kamsi. Notifikácie ukazujú rozbehnutú cestu a, ak ju necháš zapnutú, pripomienku v sobotu ráno. Pri zdieľaní nálezu ide obrázok len tam, kam si vyberieš.</p>
+    <h2>Kamsi Plus</h2>
+    <p>Kamsi Plus sa kupuje cez Google Play (alebo App Store), ktoré vybavuje platbu. Kamsi sa dozvie len to, či máš Plus, a uloží si to v telefóne. Tvoje platobné údaje nikdy nevidíme.</p>
     <h2>Máš to pod kontrolou</h2>
     <p>Povolenie polohy, fotoaparátu či notifikácií môžeš kedykoľvek odobrať v nastaveniach Androidu a pripomienku vypnúť v nastaveniach Kamsi. Vymazaním dát Kamsi alebo jeho odinštalovaním sa zmaže všetko, čo si uložilo. Keďže nemáš účet, nemáme o tebe nič.</p>
-    <p class="note">Posledná úprava: 22. novembra 2026</p>
+    <p class="note">Posledná úprava: 23. novembra 2026</p>
   </section>
 
   <section id="cs" lang="cs">
@@ -102,10 +106,10 @@
       <li><strong>Wikidata a Wikipedie</strong> (Wikimedia Foundation): tvoje poloha zaokrouhlená asi na 100 m, aby se našla zajímavá místa v okolí; později nalezené místo, aby se načetl jeho popis, údaje a fotka.</li>
       <li><strong>OpenStreetMap Nominatim</strong>: poloha cíle (ne tvoje), aby se zjistil jeho okres a nejbližší obec.</li>
       <li><strong>OpenFreeMap</strong>: mapové dlaždice oblasti, kterou vidíš na mapě, jako u každé mapové aplikace. Okolí cesty se uloží v telefonu, aby mapa fungovala i bez signálu.</li>
-      <li><strong>Open-Meteo</strong>: tvoje poloha zaokrouhlená asi na 1 km, aby tě Kamsi před cestou pěšky či na kole upozornilo na déšť.</li>
+      <li><strong>MET Norway</strong> (norský meteorologický ústav, data za yr.no): tvoje poloha zaokrouhlená asi na 1 km, aby tě Kamsi před cestou pěšky či na kole upozornilo na déšť.</li>
       <li><strong>Wikimedia Commons</strong>: fotky míst.</li>
     </ul>
-    <p>Jako u každého připojení k internetu tyto služby vidí IP adresu tvého telefonu. Jejich vlastní zásady: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://open-meteo.com/en/terms">Open-Meteo</a>.</p>
+    <p>Jako u každého připojení k internetu tyto služby vidí IP adresu tvého telefonu. Jejich vlastní zásady: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://api.met.no/doc/TermsOfService">MET Norway</a>.</p>
     <h2>Co se ukládá a kde</h2>
     <ul>
       <li>Nalezená místa: název, datum, ušlá trasa a počet použitých nápověd.</li>
@@ -115,9 +119,107 @@
     <p>Vše je uloženo pouze v soukromém úložišti Kamsi v tvém telefonu. S nikým se nesdílí, ani s námi.</p>
     <h2>Fotoaparát, fotky a oznámení</h2>
     <p>Fotoaparát a galerii Kamsi použije, jen když k místu přidáváš vlastní fotku; ta se zkopíruje do Kamsi. Oznámení ukazují rozběhnutou cestu a, pokud ji necháš zapnutou, připomínku v sobotu ráno. Při sdílení objevu jde obrázek jen tam, kam si vybereš.</p>
+    <h2>Kamsi Plus</h2>
+    <p>Kamsi Plus se kupuje přes Google Play (nebo App Store), které vyřizuje platbu. Kamsi se dozví jen to, zda máš Plus, a uloží si to v telefonu. Tvoje platební údaje nikdy nevidíme.</p>
     <h2>Máš to pod kontrolou</h2>
     <p>Oprávnění k poloze, fotoaparátu či oznámením můžeš kdykoli odebrat v nastavení Androidu a připomínku vypnout v nastavení Kamsi. Smazáním dat Kamsi nebo jeho odinstalováním se smaže vše, co uložilo. Protože nemáš účet, nemáme o tobě nic.</p>
-    <p class="note">Poslední úprava: 22. listopadu 2026</p>
+    <p class="note">Poslední úprava: 23. listopadu 2026</p>
+  </section>
+
+  <section id="de" lang="de">
+    <h1>Datenschutzerklärung</h1>
+    <p>Kamsi wird von Hovanapps entwickelt. Fragen zum Datenschutz: <a href="mailto:hovanapps@gmail.com">hovanapps@gmail.com</a>.</p>
+    <h2>Kurz gesagt</h2>
+    <p>Kamsi hat kein Konto, keine Werbung und keine Analyse. Deine Funde, Fotos und Notizen bleiben auf deinem Handy. Um Orte zu finden, die Karte zu zeichnen und das Wetter zu prüfen, fragt Kamsi offene Online-Dienste und schickt ihnen nur, was sie brauchen, ohne deinen Namen oder eine Kennung.</p>
+    <h2>Dein Standort</h2>
+    <p>Kamsi nutzt den Standort deines Handys, wenn du einen Ausflug startest und solange er läuft, auch bei ausgeschaltetem Bildschirm; eine dauerhafte Benachrichtigung zeigt das an. Er dient dazu, ein Ziel in deiner Nähe auszuwählen und dich dorthin zu führen. Dein genauer Standort wird nirgendwohin gesendet.</p>
+    <h2>Was an Online-Dienste geht</h2>
+    <ul>
+      <li><strong>Wikidata und Wikipedia</strong> (Wikimedia Foundation): deine Position, auf etwa 100 m gerundet, um interessante Orte in der Nähe zu finden; später der gefundene Ort, um Beschreibung, Fakten und Foto zu laden.</li>
+      <li><strong>OpenStreetMap Nominatim</strong>: die Position des Ziels (nicht deine), um seinen Kreis und den nächsten Ort zu benennen.</li>
+      <li><strong>OpenFreeMap</strong>: Kartenkacheln des angezeigten Gebiets, wie bei jeder Karten-App. Die Umgebung eines Ausflugs wird auf dem Handy gespeichert, damit die Karte auch ohne Signal funktioniert.</li>
+      <li><strong>MET Norway</strong> (Norwegisches Meteorologisches Institut, die Daten hinter yr.no): deine Position, auf etwa 1 km gerundet, um dich vor einem Spaziergang oder einer Radtour vor Regen zu warnen.</li>
+      <li><strong>Wikimedia Commons</strong>: Fotos der Orte.</li>
+    </ul>
+    <p>Wie bei jeder Internetverbindung sehen diese Dienste die IP-Adresse deines Handys. Ihre eigenen Richtlinien: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://api.met.no/doc/TermsOfService">MET Norway</a>.</p>
+    <h2>Was gespeichert wird und wo</h2>
+    <ul>
+      <li>Gefundene Orte: Name, Datum, der zurückgelegte Weg und wie viele Tipps du gebraucht hast.</li>
+      <li>Deine eigenen Fotos und Notizen zu gefundenen Orten.</li>
+      <li>Ein laufender Ausflug, deine Einstellungen, übersprungene Orte, Fotos und die Karte des aktuellen Ausflugs.</li>
+    </ul>
+    <p>All das wird nur im privaten Speicher von Kamsi auf deinem Handy gespeichert. Es wird mit niemandem geteilt, auch nicht mit uns.</p>
+    <h2>Kamera, Fotos und Benachrichtigungen</h2>
+    <p>Kamera und Galerie werden nur verwendet, wenn du einem Ort ein eigenes Foto hinzufügst; das Foto wird in Kamsi kopiert. Benachrichtigungen zeigen einen laufenden Ausflug und, wenn du sie eingeschaltet lässt, eine Erinnerung am Samstagmorgen. Wenn du einen Fund teilst, geht ein Bild nur dorthin, wohin du es schickst.</p>
+    <h2>Kamsi Plus</h2>
+    <p>Kamsi Plus wird über Google Play (oder den App Store) gekauft, die die Zahlung abwickeln. Kamsi erfährt nur, ob du Plus hast, und speichert das auf deinem Handy. Deine Zahlungsdaten sehen wir nie.</p>
+    <h2>Du hast die Kontrolle</h2>
+    <p>Die Berechtigungen für Standort, Kamera oder Benachrichtigungen kannst du jederzeit in den Android-Einstellungen entziehen und die Erinnerung in den Einstellungen von Kamsi ausschalten. Wenn du die Daten von Kamsi löschst oder die App deinstallierst, wird alles gelöscht, was sie gespeichert hat. Da es kein Konto gibt, haben wir nichts über dich.</p>
+    <p class="note">Zuletzt aktualisiert: 23. November 2026</p>
+  </section>
+
+  <section id="pl" lang="pl">
+    <h1>Polityka prywatności</h1>
+    <p>Kamsi tworzy Hovanapps. Pytania dotyczące prywatności: <a href="mailto:hovanapps@gmail.com">hovanapps@gmail.com</a>.</p>
+    <h2>W skrócie</h2>
+    <p>Kamsi nie ma konta, reklam ani analityki. Twoje znaleziska, zdjęcia i notatki zostają w telefonie. Aby znaleźć miejsca, narysować mapę i sprawdzić pogodę, Kamsi pyta otwarte usługi online i wysyła im tylko to, czego potrzebują, bez twojego imienia ani żadnego identyfikatora.</p>
+    <h2>Twoja lokalizacja</h2>
+    <p>Kamsi używa lokalizacji telefonu, gdy rozpoczynasz wycieczkę i dopóki ona trwa, także przy wyłączonym ekranie; informuje o tym stałe powiadomienie. Służy do wybrania celu w pobliżu i doprowadzenia cię do niego. Twoja dokładna lokalizacja nie jest nigdzie wysyłana.</p>
+    <h2>Co trafia do usług online</h2>
+    <ul>
+      <li><strong>Wikidata i Wikipedia</strong> (Wikimedia Foundation): twoja pozycja zaokrąglona do około 100 m, aby znaleźć ciekawe miejsca w pobliżu; później znalezione miejsce, aby pobrać jego opis, ciekawostki i zdjęcie.</li>
+      <li><strong>OpenStreetMap Nominatim</strong>: pozycja celu (nie twoja), aby nazwać jego powiat i najbliższą miejscowość.</li>
+      <li><strong>OpenFreeMap</strong>: kafelki mapy pokazywanego obszaru, jak w każdej aplikacji z mapą. Okolica wycieczki zapisuje się w telefonie, żeby mapa działała też bez zasięgu.</li>
+      <li><strong>MET Norway</strong> (Norweski Instytut Meteorologiczny, dane serwisu yr.no): twoja pozycja zaokrąglona do około 1 km, aby ostrzec cię przed deszczem przed spacerem lub jazdą rowerem.</li>
+      <li><strong>Wikimedia Commons</strong>: zdjęcia miejsc.</li>
+    </ul>
+    <p>Jak przy każdym połączeniu z internetem, te usługi widzą adres IP twojego telefonu. Ich własne zasady: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://api.met.no/doc/TermsOfService">MET Norway</a>.</p>
+    <h2>Co jest zapisywane i gdzie</h2>
+    <ul>
+      <li>Znalezione miejsca: nazwa, data, przebyta trasa i liczba użytych podpowiedzi.</li>
+      <li>Twoje własne zdjęcia i notatki do znalezionych miejsc.</li>
+      <li>Trwająca wycieczka, twoje ustawienia, pominięte miejsca, zdjęcia i mapa bieżącej wycieczki.</li>
+    </ul>
+    <p>Wszystko to jest przechowywane wyłącznie w prywatnej pamięci Kamsi w twoim telefonie. Nie jest z nikim udostępniane, także z nami.</p>
+    <h2>Aparat, zdjęcia i powiadomienia</h2>
+    <p>Aparat i galeria są używane tylko wtedy, gdy dodajesz do miejsca własne zdjęcie; zdjęcie jest kopiowane do Kamsi. Powiadomienia pokazują trwającą wycieczkę oraz, jeśli zostawisz je włączone, przypomnienie w sobotę rano. Udostępniając znalezisko, wysyłasz obrazek tylko tam, gdzie wybierzesz.</p>
+    <h2>Kamsi Plus</h2>
+    <p>Kamsi Plus kupuje się przez Google Play (lub App Store), które obsługują płatność. Kamsi dowiaduje się tylko, czy masz Plus, i zapisuje to w telefonie. Nigdy nie widzimy twoich danych płatniczych.</p>
+    <h2>Masz kontrolę</h2>
+    <p>Uprawnienia do lokalizacji, aparatu lub powiadomień możesz w każdej chwili odebrać w ustawieniach Androida, a przypomnienie wyłączyć w ustawieniach Kamsi. Wyczyszczenie danych Kamsi lub jej odinstalowanie usuwa wszystko, co zapisała. Ponieważ nie ma konta, nie mamy o tobie żadnych danych.</p>
+    <p class="note">Ostatnia aktualizacja: 23 listopada 2026</p>
+  </section>
+
+  <section id="hu" lang="hu">
+    <h1>Adatvédelmi tájékoztató</h1>
+    <p>A Kamsit a Hovanapps készíti. Adatvédelmi kérdések: <a href="mailto:hovanapps@gmail.com">hovanapps@gmail.com</a>.</p>
+    <h2>Röviden</h2>
+    <p>A Kamsiban nincs fiók, hirdetés és analitika. A felfedezéseid, fotóid és jegyzeteid a telefonodon maradnak. A helyek kereséséhez, a térkép megrajzolásához és az időjárás ellenőrzéséhez a Kamsi nyílt online szolgáltatásokat kérdez meg, és csak azt küldi el nekik, amire szükségük van, a neved és bármilyen azonosító nélkül.</p>
+    <h2>A helyzeted</h2>
+    <p>A Kamsi a telefon helyzetét akkor használja, amikor elindítasz egy kirándulást, és amíg az tart, kikapcsolt képernyőnél is; ezt egy állandó értesítés jelzi. Arra szolgál, hogy kiválasszon egy célt a közeledben, és odavezessen. A pontos helyzetedet sehová nem küldi el.</p>
+    <h2>Mi kerül az online szolgáltatásokhoz</h2>
+    <ul>
+      <li><strong>Wikidata és Wikipédia</strong> (Wikimedia Foundation): a helyzeted körülbelül 100 m-re kerekítve, hogy érdekes helyeket találjon a közelben; később a megtalált hely, hogy betöltse a leírását, érdekességeit és fotóját.</li>
+      <li><strong>OpenStreetMap Nominatim</strong>: a cél helyzete (nem a tiéd), hogy megnevezze a járását és a legközelebbi települést.</li>
+      <li><strong>OpenFreeMap</strong>: a megjelenített terület térképcsempéi, mint bármely térképes alkalmazásnál. A kirándulás környéke elmentődik a telefonon, így a térkép térerő nélkül is működik.</li>
+      <li><strong>MET Norway</strong> (Norvég Meteorológiai Intézet, a yr.no adatai): a helyzeted körülbelül 1 km-re kerekítve, hogy figyelmeztessen az esőre egy séta vagy biciklitúra előtt.</li>
+      <li><strong>Wikimedia Commons</strong>: a helyek fotói.</li>
+    </ul>
+    <p>Mint minden internetkapcsolatnál, ezek a szolgáltatások látják a telefonod IP-címét. Saját szabályzataik: <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://openfreemap.org/">OpenFreeMap</a>, <a href="https://api.met.no/doc/TermsOfService">MET Norway</a>.</p>
+    <h2>Mit tárol és hol</h2>
+    <ul>
+      <li>Megtalált helyek: név, dátum, a megtett út és a felhasznált tippek száma.</li>
+      <li>A saját fotóid és jegyzeteid a megtalált helyekhez.</li>
+      <li>A folyamatban lévő kirándulás, a beállításaid, a kihagyott helyek, valamint az aktuális kirándulás fotói és térképe.</li>
+    </ul>
+    <p>Mindezt csak a Kamsi saját tárhelye őrzi a telefonodon. Senkivel nem osztja meg, velünk sem.</p>
+    <h2>Kamera, fotók és értesítések</h2>
+    <p>A kamerát és a galériát csak akkor használja, amikor saját fotót adsz egy helyhez; a fotó bemásolódik a Kamsiba. Az értesítések a futó kirándulást mutatják, és ha bekapcsolva hagyod, egy szombat reggeli emlékeztetőt. Ha megosztasz egy felfedezést, a kép csak oda kerül, ahová te küldöd.</p>
+    <h2>Kamsi Plus</h2>
+    <p>A Kamsi Plus a Google Playen (vagy az App Store-ban) vásárolható meg, amelyek a fizetést intézik. A Kamsi csak azt tudja meg, hogy van-e Plusod, és ezt a telefonodon tárolja. A fizetési adataidat soha nem látjuk.</p>
+    <h2>Te döntesz</h2>
+    <p>A helymeghatározási, kamera- vagy értesítési engedélyt bármikor visszavonhatod az Android beállításaiban, az emlékeztetőt pedig kikapcsolhatod a Kamsi beállításaiban. A Kamsi adatainak törlése vagy az alkalmazás eltávolítása mindent töröl, amit tárolt. Mivel nincs fiók, nálunk semmi sincs rólad.</p>
+    <p class="note">Utolsó frissítés: 2026. november 23.</p>
   </section>
 </main>
 </body>
